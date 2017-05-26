@@ -10,10 +10,13 @@ from django.core.mail import send_mail, EmailMessage
 from django.db.models.query import QuerySet
 from django.http import Http404
 
-try:
-    import mimeparse
-except ImportError:
-    mimeparse = None
+# disabled
+#try:
+#    import mimeparse
+#except ImportError:
+#    mimeparse = None
+
+mimeparse = None
 
 from emitters import Emitter
 from handler import typemapper
